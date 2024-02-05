@@ -1,48 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .maincontainer {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-columns: 1fr 4.5fr;
+    grid-template-rows: 150px 100%;
+    min-height: 100vh;
 }
 
 .dashleft {
-    background-color: blue;
+    background-color: rgb(9, 133, 216);
     grid-row: 1 / 3;
-    display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 1fr;
     padding: 15px;
+    color: white;
 }
 
-.dashleft > .mainlabel {
-    font-size: 25px;
+.mainlabel {
+    font-size: 22px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
 }
 
-.dashleft > .label {
-    font-size: 18px;
+.mainlabel > span {
+    padding-top: 4px;
+}
+
+.mainlabel > img {
+    margin-right: 8px;
+}
+
+.label {
+    padding-top: 3px;
 }
 
 .icon {
-    text-align: center;
+    text-align: left;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 3px;
 }
 
 .icon > img {
-    width: 25px;
+    width: 20px;
+    margin-right: 15px;
+    margin-left: 3px;
 }
 
-.icon > img.mainicon {
-    width: 50px;
+img.mainicon {
+    width: 40px;
 }
 
 .dashtop {
-    background-color: yellow;
+    background-color: rgb(240, 240, 96);
 }
 
 .dashcontent {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 50px 1fr 5px 1fr;
+}
+
+.spacer {
+    height: 20px;
 }
