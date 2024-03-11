@@ -59,13 +59,200 @@ img.mainicon {
 }
 
 .dashtop {
-    background-color: rgb(240, 240, 96);
+    background-color: rgb(247, 247, 247);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 3fr;
+    gap: 10px;
+    box-shadow:rgba(152, 169, 179, 0.473) 0px 4px 3px;
+    z-index: 1;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 21px 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.search > img {
+    width: 20px;
+}
+
+#searchbar {
+    border: none;
+    border-radius: 12px;
+    background-color:rgb(206, 224, 235);
+    height: 27px;
+    width: 95%;
+    margin: auto;
+}
+
+.notifs {
+    display: grid;
+    grid-template-columns: 26px 51px 20%;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.notifs > img {
+    width: 20px;
+}
+
+.notifs > .pfp {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 66px 1fr;
+    padding: 0px 15px;
+    gap: 15px;
+    align-items: center;
+}
+
+.greeting > .pfp {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 110px 110px 110px;
+    gap: 25px;
+    align-items: center;
+    padding: 0px 25px;
+    justify-content: space-around;
+}
+
+.actions > button {
+    width: 90px;
+    height: 35px;
+    background-color:rgb(9, 133, 216);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 16px;
 }
 
 .dashcontent {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 50px 1fr 5px 1fr;
+    grid-template-rows: 40px .5fr 40px .5fr;
+    background-color: rgb(189, 208, 219);
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+.dashcontent > .header {
+    align-self: end;
+    font-size: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    color:rgb(128, 128, 128);
+    padding: 10px;
+    box-shadow:rgba(152, 169, 179, 0.473) 4px 4px 3px;
+}
+
+.trend {
+    gap: 5px;
+}
+
+.card > .trend {
+    padding: 5px;
+}
+
+.trend > img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.trend > span > p {
+    padding-top: 3px;
+}
+
+.nickname {
+    color: black;
+}
+
+.announcementstiles > .card {
+    height: 350px;
+}
+
+.titlehead {
+    font-size: 15px;
+    color:black;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card > p {
+    padding: 15px;
+    height: 75px;
+    overflow: hidden;
+}
+
+#projecttiles {
+    grid-row: 2 / 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 220px;
+    gap: 5px;
+}
+
+#projecttiles > .card {
+    width: 90%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    grid-template-rows: 2fr 1fr;
+    font-size: 16px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.projectdescrip {
+    padding: 20px;
+}
+
+.projectdescrip > p {
+    color: black;
+    font-weight: bold;
+}
+
+.cardimages {
+    display: grid;
+    grid-template-columns: 21px 21px 21px;
+    justify-content: end;
+    padding: 20px;
+    gap: 25px;
+}
+
+.cardimages > img {
+    width: 25px;
+}
+
+.colorbar {
+    background-color:rgb(255, 103, 161);
+    grid-row: 1 / 3;
 }
 
 .spacer {
